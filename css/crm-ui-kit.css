@@ -1,0 +1,367 @@
+@import "../css/fonts.css";
+@import "../css/vars.css";
+@import "../css/vendor.css";
+
+/*====================================
+Общие стили
+====================================*/
+.crm-body {
+    font-family: var(--base-font);
+    font-size: var(--base-size);
+    color: var(--asphalt);
+    line-height: 1.2em;
+}
+
+.crm-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.crm-col {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.crm-col-1 {
+    width: 8.333%;
+}
+
+.crm-col-2 {
+    width: 16.666%;
+}
+
+.crm-col-3 {
+    width: 25%;
+}
+
+.crm-col-4 {
+    width: 33.333%;
+}
+
+.crm-col-5 {
+    width: 41.666%;
+}
+
+.crm-col-5 {
+    width: 41.666%;
+}
+
+.crm-col-6 {
+    width: 50%;
+}
+
+.crm-col-7 {
+    width: 58.333%;
+}
+
+.crm-col-8 {
+    width: 66.666%;
+}
+
+.crm-col-10 {
+    width: 83.333%;
+}
+
+.crm-col-11 {
+    width: 91.666%;
+}
+
+.crm-col-12 {
+    width: 100%;
+}
+
+/*====================================
+Заголовки
+====================================*/
+.crm-title-1, .crm-title-2, .crm-title-3, .crm-title-4, .crm-title-5, .crm-title-6 {
+    color: #000;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.crm-title-1 {
+    font-size: 28px;
+    margin: 1rem 0 3rem;
+}
+
+.crm-title-2 {
+    font-size: 24px;
+    margin: 1.2rem 0 2.2rem;
+}
+
+.crm-title-3 {
+    font-size: 20px;
+    margin: 1.2rem 0 1.2rem;
+}
+
+.crm-title-4 {
+    font-size: 18px;
+    margin: 1.2rem 0 1.2rem;
+}
+
+.crm-title-5 {
+    font-size: 16px;
+    margin: 1.2rem 0 1.2rem;
+}
+
+.crm-title-6 {
+    font-size: 14px;
+    margin: 1.2rem 0 1.2rem;
+}
+
+/*====================================
+Кнопки
+====================================*/
+.crm-btn, .crm-btn-small  {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    background-color: var(--base);
+    position: relative;
+    transition: .3s all;
+    outline: none;
+}
+
+:is(.crm-btn, .crm-btn-small):hover,
+:is(.crm-btn, .crm-btn-small):hover {
+    background-color: var(--new-base);
+}
+
+.crm-btn-small {
+    padding: 5px 8px;
+}
+
+.crm-btn-agree {
+    color: var(--text-light);
+    background-color: var(--agree);
+}
+
+.crm-btn-agree:hover,
+.crm-btn-agree:focus {
+    background-color: var(--new-agree);
+}
+
+.crm-btn-warn {
+    color: var(--text-light);
+    background-color: var(--warn);
+}
+
+.crm-btn-warn:hover,
+.crm-btn-warn:focus {
+    background-color: var(--new-warn);
+}
+
+.crm-btn-danger {
+    color: var(--text-light);
+    background-color: var(--danger);
+}
+
+.crm-btn-danger:hover,
+.crm-btn-danger:hover {
+    background-color: var(--new-danger);
+}
+
+.crm-btn-blue {
+    color: var(--text-light);
+    background-color: var(--blue);
+}
+
+.crm-btn-blue:hover,
+.crm-btn-blue:focus {
+    background-color: var(--new-blue);
+}
+
+.crm-btn-green {
+    color: var(--text-light);
+    background-color: var(--green);
+}
+
+.crm-btn-green:hover {
+    background-color: var(--new-green)
+}
+
+.crm-btn-asphalt {
+    color: var(--text-light);
+    background-color: var(--asphalt);
+}
+
+.crm-btn-asphalt:hover {
+    background-color: var(--new-asphalt)
+}
+
+:is(.crm-btn, .crm-btn-small):hover {
+    box-shadow: var(--hover-btn);
+}
+
+:is(.crm-btn, .crm-btn-small):focus {
+    box-shadow: var(--focus-btn);
+}
+
+:is(.crm-btn, .crm-btn-small):active {
+    box-shadow: var(--active-btn);
+}
+
+/*====================================
+Элементы форм
+====================================*/
+.crm-input {
+    width: 100%;
+    padding: 10px;
+    font-family: var(--base-font);
+    font-size: var(--base-size);
+    border: var(--static-border);
+    transition: .3s all;
+}
+
+.crm-textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: var(--base-font);
+    font-size: var(--base-size);
+    outline: none;
+    border: 1px solid rgba(0,0,0,.5);
+    transition: .3s all;
+    resize: none;
+}
+
+.crm-input_error {
+    border: 1px solid var(--danger);
+}
+
+:is(.crm-input, .crm-textarea)::placeholder {
+    color: var(--text-placeholder);
+}
+
+:is(.crm-input, .crm-textarea):hover {
+    border: var(--hover-border);
+}
+
+/*:is(.crm-input, .crm-textarea):focus {*/
+/*    box-shadow: var(--focus-input);*/
+/*}*/
+
+/*:is(.crm-input, .crm-textarea):active {*/
+/*    box-shadow: var(--active-input);*/
+/*}*/
+
+/*:is(.crm-input, .crm-textarea).crm-input_error:hover {*/
+/*    box-shadow: var(--error-input);*/
+/*}*/
+
+/*:is(.crm-input, .crm-textarea).crm-input_error:focus {*/
+/*    box-shadow: var(--error-input);*/
+/*}*/
+
+/*:is(.crm-input, .crm-textarea).crm-input_error:active {*/
+/*    box-shadow: var(--error-input);*/
+/*}*/
+
+.crm-label {
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.2rem;
+}
+
+.crm-check,
+.crm-radio {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+.crm-input_check,
+.crm-input_radio {
+    position: relative;
+    z-index: 0;
+    padding: 15px;
+    transition: .3s all;
+}
+
+.crm-input_check:after,
+.crm-input_check:before,
+.crm-input_radio:after,
+.crm-input_radio:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .3s all;
+}
+
+.crm-input_check:after {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: transparent;
+    border: 1px solid var(--asphalt);
+    z-index: 1;
+    left: 15px;
+    top: 15px;
+}
+
+.crm-input_check:before {
+    display: inline-block;
+    width: .8rem;
+    height: .4rem;
+    background-color: transparent;
+    border-bottom: 2px solid var(--agree);
+    border-left: 2px solid var(--agree);
+    z-index: 2;
+    left: calc(15px + 0.2rem);
+    top: calc(16px + 0.2rem);
+    transform: rotate(-45deg);
+}
+
+.crm-input_radio:after {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--asphalt);
+    z-index: 1;
+    left: 15px;
+    top: 15px;
+}
+
+.crm-input_radio:before {
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: var(--blue);
+    z-index: 2;
+    left: calc(15px + 0.2rem);
+    top: calc(15px + 0.2rem);
+}
+
+.crm-radio {
+    margin-right: 10px;
+}
+
+.crm-check {
+    margin-right: 10px;
+}
+
+.crm-check-set,
+.crm-radio-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 15px;
+}
+
+/*====================================
+Табличные данные
+====================================*/

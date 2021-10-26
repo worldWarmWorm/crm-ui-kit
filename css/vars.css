@@ -1,0 +1,37 @@
+:root {
+    --base-font: "DINPro", sans-serif;
+    --base-size: 15px;
+
+    /* Главные цвета фирмы */
+    --blue: rgb(0,159,227);
+    --green: rgb(149,193,31);
+    --asphalt: rgb(68,80,85);
+
+    /* Базовые цвета */
+    --base: rgb(241,241,241);
+    --agree: rgb(39,174,96);
+    --warn: rgb(229,112,35);
+    --danger: rgb(231,76,60);
+    --text-light: rgb(255,255,255);
+    --text-placeholder: rgb(80,80,80);
+
+    --new-base: rgb(213, 213, 213);
+    --new-agree: rgb(27, 152, 80);
+    --new-warn: rgb(201, 94, 22);
+    --new-danger: rgb(199, 57, 43);
+    --new-blue: rgb(1, 136, 194);
+    --new-green: rgb(115, 154, 14);
+    --new-asphalt: rgb(45, 57, 61);
+
+    /* Тени кнопок при разныых состояниях */
+    --hover-btn: 0 2px 12px rgba(68,80,85,.4);
+    --focus-btn: 0 2px 12px rgba(68,80,85,.4);
+    --active-btn: 0 1px 6px rgba(68,80,85,.4);
+
+    /* Стили элементов форм */
+    --static-border: 1px solid var(--asphalt);
+    --hover-border: 1px solid var(--blue);
+    --focus-border: 1px solid var(--blue);
+    --active-border: 1px solid var(--blue);
+    --error-border: 1px solid var(--danger);
+}
